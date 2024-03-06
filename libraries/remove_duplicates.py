@@ -35,3 +35,5 @@ def remove_duplicates(directory):
 
             os.rename(latest_file_path, os.path.join(root, f"{file_name}{latest_file_extension}"))
             f.write(f"{timestamp}: Rename {latest_file_path} to {file_name}{latest_file_extension}\n")
+
+    f.close()
