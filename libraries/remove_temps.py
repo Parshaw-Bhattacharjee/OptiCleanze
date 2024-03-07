@@ -4,9 +4,9 @@ from datetime import datetime
 # Directories to search for temporary files
 
 temp_dirs = [
-    '~/Downloads',
-    '~/Desktop'
-    'C:/Users/Appdata/Local/Temp'
+    "~/Downloads",
+    "~/Desktop",
+    "C:\Users\Parshaw\AppData\Local\Temp"
 ]
 
 # Extensions of the temporary files
@@ -36,6 +36,7 @@ def remove_temps():
                     except Exception as e:
                         f = open("../logs/remove_temps_error.log", "w")
                         f.write(f"{datetime.now()}: Error deleting {file_path}: {e}\n")
+                        f.close()
 
                     # Remove screenshots from the Desktop
                     if dir == '~/Desktop':
