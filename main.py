@@ -1,6 +1,6 @@
 from libraries import remove_duplicates, remove_temps
 
-dirs = "/home/parshaw/Downloads"
+dirs = "~/Downloads"
 
 remove_duplicates.remove_duplicates(dirs)
 
